@@ -7,60 +7,72 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Arranque
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Se necesitará lo siguiente para poder arrancar el proyecto:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<ul>
+<li>Node v22.11.0</li>
+<li>NPM v10.9.0</li>
+<li>composer 2.8.2</li>
+<li>php 8.3.2</li>
+</ul>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Una vez se tengan estos, el orden de arranque será el siguiente.
+<ol>
+<li>Clonación del proyecto</li>
+<li>Instalación de paquetes: composer install</li>
+<li>Instalación de dependencias: npm install</li>
+<li>Arranque de modo dev: npm run dev</li>
+<li>Arranque servidor: php artisan serve</li>
+</ol>
 
-## Learning Laravel
+Nota: En caso de ser necesario pueden ejecutar por URL /clear-cache para limpiar los datos almacenados y regenerar las
+caches del sistema.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Inicio sesión
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Para poder iniciar sesión en el sistema debe ingresar su correo y contraseña registrados anteriormente en el sistema. En
+caso de no desear registrarse puede usar la cuenta administradora.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<p>Usuario: admin@example.com</p> 
+<p>Contraseña:demo</p>
 
-## Laravel Sponsors
+Nota: Todas las contraseñas son demo para optimizar tiempos.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Desarrollo
 
-### Premium Partners
+El desarrollo consta de un funcionamiento de panel básico, se aplica laravel/ui en vez de breeze ya que disponemos de
+poco tiempo para desarrollar el software.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Una vez entras al sistema te encuentras con un login el cual se especifica arriba como acceder a el, una vez accedido
+podremos ingresar un DNI para gestionar una cita para un usuario o en caso de no existir un usuario con ese DNI darlo de
+alta y solicitar la cita. Disponemos de envío por correo con un sistema de desarrollo Mailtrap el cual se deberá
+configurar en el archivo .env con los datos figurantes en el propio mailtrap (cualquier duda preguntar al respecto y se
+os adjunta una cuenta con los datos puestos). Al finalizar la solicitud podremos acceder a el Listado de Citas para ver
+las citas que disponemos y filtrar por ellas. En caso del usuario Administrador puede ver todas las citas del sistema,
+para el resto de usuarios deberan acceder al sistema con su correo y contraseña (demo) para ver su listado de citas.
 
-## Contributing
+## Ejercicio 1: Descodificación
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Para poder acceder a ver este ejercicio es necesario primero iniciar sesión y posteriormente a esto acceder por el menú
+contextual del sistema o por el siguiente enlace.
 
-## Code of Conduct
+La información respecto a este ejercicio se encuentra en las siguientes carpetas del proyecto:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<ul>
+<li>app/Http/Controllers/DecodificacionController.php</li>
+<li>web.php</li>
+</ul>
 
-## Security Vulnerabilities
+<p>
+Enlace: 
+<a href="http://127.0.0.1:8000/decodificacion">Ejercicio Descodificación</a>
+</p>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## About
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p>Software para prueba de acceso.</p>
+<p>Desarrollado para la empresa: Pandorafms </p>
+<p>Desarrollador: David Fernandez Roman -
+39498123Q</p>
