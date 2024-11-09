@@ -35,6 +35,9 @@ caches del sistema.
 Para poder iniciar sesión en el sistema debe ingresar su correo y contraseña registrados anteriormente en el sistema. En
 caso de no desear registrarse puede usar la cuenta administradora.
 
+El único usuario que puede gestionar las citas es admin para evitar tener que hacer roles, el resto de usuarios que se
+crean en el sistema es solo para que vean su historico de citas.
+
 <p>Usuario: admin@example.com</p> 
 <p>Contraseña:demo</p>
 
@@ -45,13 +48,14 @@ Nota: Todas las contraseñas son demo para optimizar tiempos.
 El desarrollo consta de un funcionamiento de panel básico, se aplica laravel/ui en vez de breeze ya que disponemos de
 poco tiempo para desarrollar el software.
 
-Una vez entras al sistema te encuentras con un login el cual se especifica arriba como acceder a el, una vez accedido
-podremos ingresar un DNI para gestionar una cita para un usuario o en caso de no existir un usuario con ese DNI darlo de
-alta y solicitar la cita. Disponemos de envío por correo con un sistema de desarrollo Mailtrap el cual se deberá
-configurar en el archivo .env con los datos figurantes en el propio mailtrap (cualquier duda preguntar al respecto y se
-os adjunta una cuenta con los datos puestos). Al finalizar la solicitud podremos acceder a el Listado de Citas para ver
-las citas que disponemos y filtrar por ellas. En caso del usuario Administrador puede ver todas las citas del sistema,
-para el resto de usuarios deberan acceder al sistema con su correo y contraseña (demo) para ver su listado de citas.
+Una vez entras al sistema te encuentras con un login el cual se especifica arriba como acceder a el, una vez accedido si
+somos administradores podremos ingresar un DNI para gestionar una cita para un usuario o en caso de no existir un
+usuario con ese DNI darlo de alta y solicitar la cita. Disponemos de envío por correo con un sistema de desarrollo
+Mailtrap el cual se deberá configurar en el archivo .env con los datos figurantes en el propio mailtrap (cualquier duda
+preguntar al respecto y se os adjunta una cuenta con los datos puestos). Al finalizar la solicitud podremos acceder a el
+Listado de Citas para ver las citas que disponemos y filtrar por ellas. En caso del usuario Administrador puede ver
+todas las citas del sistema, para el resto de usuarios deberán acceder al sistema con su correo y contraseña (demo) para
+ver su listado de citas.
 
 ## Ejercicio 1: Descodificación
 
